@@ -14,14 +14,14 @@
     <s></s>GinsterGram</h1>
 </center><br>
 
-<%= form_with scope: :user do |form| %>
+<%= form_with scope: :user, url: users_path do |form| %>
 <div>
   <h3>Create an Account</h3><br>
-  <%= form.text_field :username, class: 'textbox-style', :required => true, :placeholder => 'Type your username' %>
+  <%= form.text_field :name, class: 'textbox-style', :required => true, :placeholder => 'Type your username' %>
   <br><br>
   <%= form.text_field :email, class: 'textbox-style', :required => true, :placeholder => 'Type your email' %>
   <br><br>
   <%= form.password_field :password, class: 'textbox-style', :required => true, :placeholder => 'Type your password' %>
   <br><br>
-  <%= form.submit "Submit", class: 'button' %><br>&nbsp;</div>
+  <%= form.submit "Submit", class: 'button' %><br></div>
 <% end %>
