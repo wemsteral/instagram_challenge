@@ -1,20 +1,31 @@
 <header>
-  <div>
-    <h3>
-      <p>Already created an account?</p>
-
-      Login
+  <center>
+    <div>
+      <h3>
+        <%= image_tag("ie_logo.gif") %>
+        <%= image_tag("noframes.gif") %>
+        <%= image_tag("notepad.gif") %>
+        <p>Already created an account?</p>
+        <%= link_to '/login' do %>
+        Login
+      <% end %>
 
     </h3>
   </div>
+</center>
 </header>
 
 <center><br>
-  <h1>
-    <s></s>GinsterGram</h1>
+<h1>
+  <s></s><br><%= image_tag("7upspot.gif") %>GinsterGram<%= image_tag("7upspot.gif") %></h1>
+<%= image_tag("rainbow.gif") %><br>
+<%= image_tag("ginster2.jpg", size: "300x200") %><br>
+<%= image_tag("rainbow.gif") %><br>
 </center><br>
 
 <%= form_with scope: :user, url: users_path do |form| %>
+
+<center>
 <div>
   <h3>Create an Account</h3><br>
   <%= form.text_field :name, class: 'textbox-style', :required => true, :placeholder => 'Type your username' %>
@@ -23,5 +34,8 @@
   <br><br>
   <%= form.password_field :password, class: 'textbox-style', :required => true, :placeholder => 'Type your password' %>
   <br><br>
-  <%= form.submit "Submit", class: 'button' %><br></div>
+  <%= form.submit "Submit", class: 'button' %><br><%= image_tag("flames.gif", size: "300x200") %><br><%= image_tag("counter2.gif") %></center>
+
+</div>
+
 <% end %>

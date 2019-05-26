@@ -1,0 +1,41 @@
+<header>
+  <center>
+    <div>
+      <h3>
+        <%= image_tag("ie_logo.gif") %>
+        <%= image_tag("noframes.gif") %>
+        <%= image_tag("notepad.gif") %>
+        <p class="button">Need to create a meat-filled, savoury account?</p>
+        <%= link_to 'signup' do %>
+        Sign Up
+      <% end %>
+
+    </h3>
+  </div>
+</center>
+</header>
+
+<center><br>
+<h1>
+  <s></s><br><%= image_tag("7upspot.gif") %>GinsterGram<%= image_tag("7upspot.gif") %></h1>
+<%= image_tag("rainbow.gif") %><br>
+<%= image_tag("ginster2.jpg", size: "300x200") %><br>
+<%= image_tag("rainbow.gif") %><br>
+
+</center><br>
+
+<center>
+<div>
+  <form action="/login" method="POST">
+    <div>
+      <h3><%= image_tag("sign-in.gif") %><br>
+        <input type="email" class="textbox-style" name="login[email]" placeholder="Type your email"><br>
+        <input type="password" class="textbox-style" name="login[password]" placeholder="Type your password"><br>
+        <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+        <input type="submit" class="button" name="Login" value="Login">
+      </form>
+    </h3>
+  </div>
+  <%= image_tag("flames.gif", size: "300x200") %><br><%= image_tag("counter2.gif") %></center>
+
+</div>

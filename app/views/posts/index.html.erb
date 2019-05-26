@@ -1,12 +1,33 @@
-<%= link_to new_post_path do %>
-New post
+<head>
+  <%= link_to logout_path do %>
+  logout
+<% end %>
+<center>
+  <%= link_to new_post_path do %><br>
+
+  <h2><%= image_tag("mchammer.gif") %>New post<%= image_tag("mchammer.gif") %></h2>
+
+  <br>
+  <br>
+</head>
+<%= image_tag("divider.gif") %>
+</center>
+
+<body>
 
 <% end %>
 
 <% @posts.each do |post| %>
 <div>
-  <img src="<%= post.photo %>" width="350" height="350">
-  <p><%= post.description %></p>
-  <br>
+  <center>
+    <img class="img" src="<%= post.photo %>" width="350" height="350">
+    <p><%= post.description %></p>
+    <%= image_tag("divider.gif") %>
+    <br>
+  </center>
 </div>
+</body>
 <% end %>
+<center>
+<%= image_tag("audience.gif") %>
+</center>

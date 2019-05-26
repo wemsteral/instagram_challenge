@@ -1,10 +1,23 @@
-<h1>New Post</h1>
-
-<%= form_for @post do |form| %>
 <div>
-  <%= form.text_field :description, :required => true, :placeholder => 'description' %>
-  <br><br>
-  <%= form.file_field :photo, :required => true, :placeholder => 'image' %>
-  <br><br>
-  <%= form.submit "Submit" %><br></div>
-<% end %>
+  <center>
+    <%= image_tag("mchammer.gif") %><br>
+    <%= image_tag("rainbow.gif") %>
+    <h1><%= image_tag("new.gif") %>New Post</h1>
+    <center>
+      <div style="style" media="screen">
+
+        <%= form_for @post do |form| %>
+
+        <%= form.text_field :description, :required => true, :placeholder => 'description' %>
+        <br><br>
+
+        <div style="padding-left: 130px">
+          <%= form.file_field :photo, :required => true, :placeholder => 'image' %>
+        </div>
+        <br><br>
+        <%= form.submit "Submit" %><br></div>
+
+    <% end %>
+    <%= image_tag("rainbow.gif") %><br>
+    <%= image_tag("mchammer.gif") %>
+  </center>
