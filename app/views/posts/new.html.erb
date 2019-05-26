@@ -1,0 +1,10 @@
+<h1>New Post</h1>
+
+<%= form_for @post do |form| %>
+<div>
+  <%= form.text_field :description, :required => true, :placeholder => 'description' %>
+  <br><br>
+  <%= form.file_field :photo, :required => true, :placeholder => 'image' %>
+  <br><br>
+  <%= form.submit "Submit" %><br></div>
+<% end %>

@@ -1,0 +1,12 @@
+<%= link_to new_post_path do %>
+New post
+
+<% end %>
+
+<% @posts.each do |post| %>
+<div>
+  <img src="<%= post.photo %>" width="350" height="350">
+  <p><%= post.description %></p>
+  <br>
+</div>
+<% end %>

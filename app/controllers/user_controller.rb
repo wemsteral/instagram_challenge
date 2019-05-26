@@ -6,7 +6,7 @@ class UserController < ApplicationController
   def create
     @user = User.new(user_params)
     @user.save
-    redirect_to 'user/index'
+    redirect_to '/posts/index'
   end
 
   private

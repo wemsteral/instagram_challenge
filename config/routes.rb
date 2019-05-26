@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  get '/users/new' => 'user#new'
+  get 'signup' => 'user#new'
   post '/users' => 'user#create'
+  get '/posts/index' => 'posts#index'
 
   resources :users
   resources :posts
-  root 'user#index'
+
+  root 'user#new'
 end
