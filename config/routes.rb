@@ -11,7 +11,10 @@ Rails.application.routes.draw do
   get '/posts/index' => 'posts#index'
 
   resources :users
-  resources :posts
+  resources :posts do
+    resources :comments
+  end 
+
 
   root 'user#new'
 end

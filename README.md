@@ -1,8 +1,15 @@
-# Instagram Challenge
+# GinsterGram
 
 ## What is this?
 
-This is a replica of instagram built with ruby-on-rails (& Ruby 2.6.0)
+This is a replica of instagram built with ruby-on-rails (Ruby 2.6.0)
+
+## Screenshots
+
+![gg1](https://github.com/wemsteral/instagram_challenge/blob/master/gg1.png)
+![gg2](https://github.com/wemsteral/instagram_challenge/blob/master/gg2.png)
+![gg3](https://github.com/wemsteral/instagram_challenge/blob/master/gg3.png)
+![gg4](https://github.com/wemsteral/instagram_challenge/blob/master/gg4.png)
 
 ## User Stories
 
