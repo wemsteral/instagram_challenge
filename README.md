@@ -10,6 +10,8 @@ _______            __            ______
 
 ## What is this?
 
+_imagine that instagram was designed in 1994 by Ginsters_
+
 This is a replica of instagram built with ruby-on-rails (Ruby 2.6.0). 
 Users can sign up for an account with a name, email and password.
 Users can post pictures to the main wall.
