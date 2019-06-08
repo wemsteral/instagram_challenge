@@ -10,7 +10,9 @@ _______            __            ______
 
 ## What is this?
 
-This is a replica of instagram built with ruby-on-rails (Ruby 2.6.0)
+This is a replica of instagram built with ruby-on-rails (Ruby 2.6.0). 
+Users can sign up for an account with a name, email and password.
+Users can post pictures to the main wall.
 
 ## Screenshots
 
@@ -51,6 +53,6 @@ I'd like the edit and delete options for my posts to be removed if the current u
 ### Instructions
 
 - Clone this repo
-- `Bundle Install`
+- `bundle install`
 - `rake db:migrate`
-- Run your local server
+- Run your local server with `rails s`
